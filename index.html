@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZK Location Proof</title>
+</head>
+<body>
+    <h1>Zero-Knowledge Location Proof</h1>
+    <form id="proofForm">
+        <label for="location">Location (Encoded):</label><br>
+        <input type="text" id="location" name="location" value="123456789"><br><br>
+        <label for="authToken">Auth Token:</label><br>
+        <input type="text" id="authToken" name="authToken" value="111222333"><br><br>
+        <input type="button" value="Generate Proof" onclick="generateProof()">
+    </form>
+    <p id="status"></p>
+
+    <!-- Include snarkjs and circomlibjs -->
+    <script src="https://cdn.jsdelivr.net/npm/snarkjs@latest/build/snarkjs.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
